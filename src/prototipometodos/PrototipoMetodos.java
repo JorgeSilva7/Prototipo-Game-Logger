@@ -62,10 +62,7 @@ public class PrototipoMetodos {
 }
     
     public static String buscarJuego(String nombre){
-        Scanner leer = new Scanner(System.in);
         String ruta;
-        System.out.println("Ingrese el nombre del juego que desea buscar");
-        nombre = leer.next();
         System.out.println("El juego se está buscando, espere..."); // Aquí se debería buscar en el arreglo cuando este hecho
         // for(int i = 0; i < arreglo.lenght; i++){
         //      if(nombre == arreglo[i]){

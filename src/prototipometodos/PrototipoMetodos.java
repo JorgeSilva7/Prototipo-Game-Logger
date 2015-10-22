@@ -59,6 +59,14 @@ public class PrototipoMetodos {
     return nombre;
     
 }
+    public static void agregarJuego(String arreglo[][],String ruta, String nombre,Scanner leer){
+        //Si fuera un arreglo
+        //arreglo y leer solo si fuera un arreglo (prototipo)
+        System.out.println("Ingrese columna donde agregar juego");
+        int opt=leer.nextInt();
+        arreglo[0][opt]=nombre;
+        arreglo[1][opt]=ruta;
+    }
     
     public static String buscarJuego(){
         Scanner leer = new Scanner(System.in);

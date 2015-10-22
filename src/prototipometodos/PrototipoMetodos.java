@@ -48,6 +48,19 @@ public class PrototipoMetodos {
     }  
     }
     
+       public static String leerNombre(String nombre){
+    
+    Scanner leer=new Scanner (System.in);
+    System.out.println("Ingrese el nombre que desee asignarle al juego");
+    nombre=leer.next();
+    //for(i=0; i<arreglo.lenght; i++){
+    //    nombre=arreglo[i];
+    //}
+    
+    return nombre;
+    
+}
+    
     public static String buscarJuego(String nombre){
         Scanner leer = new Scanner(System.in);
         String ruta;

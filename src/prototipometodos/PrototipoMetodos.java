@@ -8,6 +8,7 @@ package prototipometodos;
 import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import java.util.Scanner;
 /**
  *
  * @author Coke
@@ -48,7 +49,20 @@ public class PrototipoMetodos {
     }
     
     public static String buscarJuego(String nombre){
-        return "";
+        Scanner leer = new Scanner(System.in);
+        String ruta;
+        System.out.println("Ingrese el nombre del juego que desea buscar");
+        nombre = leer.next();
+        System.out.println("El juego se está buscando, espere..."); // Aquí se debería buscar en el arreglo cuando este hecho
+        // for(int i = 0; i < arreglo.lenght; i++){
+        //      if(nombre == arreglo[i]){
+        //          System.out.println("Se ha encontrado el juego");
+        //          ruta = ruta del arreglo;
+        //  }
+        // }
+        
+        ruta = "RUTA DE JUEGO";
+        return ruta;
     }
     
     

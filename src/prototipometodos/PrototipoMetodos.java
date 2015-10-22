@@ -48,11 +48,10 @@ public class PrototipoMetodos {
     }  
     }
     
-       public static String leerNombre(String nombre){
+    public static String leerNombre(Scanner leer){
     
-    Scanner leer=new Scanner (System.in);
     System.out.println("Ingrese el nombre que desee asignarle al juego");
-    nombre=leer.next();
+    String nombre=leer.next();
     //for(i=0; i<arreglo.lenght; i++){
     //    nombre=arreglo[i];
     //}
@@ -61,8 +60,11 @@ public class PrototipoMetodos {
     
 }
     
-    public static String buscarJuego(String nombre){
+    public static String buscarJuego(){
+        Scanner leer = new Scanner(System.in);
         String ruta;
+        System.out.println("Ingrese el nombre del juego que desea buscar");
+        String nombre = leer.next();
         System.out.println("El juego se está buscando, espere..."); // Aquí se debería buscar en el arreglo cuando este hecho
         // for(int i = 0; i < arreglo.lenght; i++){
         //      if(nombre == arreglo[i]){
@@ -77,13 +79,11 @@ public class PrototipoMetodos {
     
     
     public static void eliminarJuegos(String juego){
-	String ruta;
-        ruta = buscarJuego(juego);
-        File archivo = new File(ruta);
+        File archivo = new File(juego);
 	
 	if(archivo.delete()){
             System.out.println("El juego ha sido eliminado satisfactoriamente");
-        }
+       }
 }
     
     public static void main(String[] args) {

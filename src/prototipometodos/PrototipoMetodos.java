@@ -53,7 +53,7 @@ public class PrototipoMetodos {
     public static void main(String[] args) {
         
        System.out.println("La ruta es: "+ingresarRuta());
-        System.out.println("TEST GIT23"); 
+       
     }
     
 }

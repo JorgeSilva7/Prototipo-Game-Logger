@@ -47,10 +47,23 @@ public class PrototipoMetodos {
     }  
     }
     
+    public static String buscarJuego(String nombre){
+        return "";
+    }
     
     
+    public static void eliminarJuegos(String juego){
+	String ruta;
+        ruta = buscarJuego(juego);
+        File archivo = new File(ruta);
+	
+	if(archivo.delete()){
+            System.out.println("El juego ha sido eliminado satisfactoriamente");
+        }
+}
     
     public static void main(String[] args) {
+        
         
        System.out.println("La ruta es: "+ingresarRuta());
        

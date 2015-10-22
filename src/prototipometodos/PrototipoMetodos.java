@@ -39,6 +39,14 @@ public class PrototipoMetodos {
         return ruta;
     }
     
+    public static void ejecutarJuego(String ruta){
+    try{    
+    Runtime.getRuntime().exec("cmd.exe /c start \"\" \""+ruta+"\"");
+    }catch(Exception e){
+        System.exit(0);
+    }  
+    }
+    
     
     
     
